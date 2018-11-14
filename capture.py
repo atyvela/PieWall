@@ -16,7 +16,7 @@ packet_count=0
 capture = pyshark.LiveCapture(interface='eth0') #capture from eth0
 packet_iterator = capture.sniff_continuously 	#capture continuously
 
-IP_exclude = ['192.168.1.117', '192.168.1.1','noip'] # exclude RPIs and Routers own IP addresses
+IP_exclude = ['noip'] # exclude RPIs and Routers own IP addresses
 Safe_IPs = [] # list to be appended with IPs already checked
 
 #router_exclude = ['18:31:bf:67:74:f0',] #exclude router mac address to assign router IP
